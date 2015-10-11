@@ -14,15 +14,15 @@ mc.postToChat("PRESS THE BUTTON!")
 def bomb(x, y, z):
 	mc.setBlock(x+1, y, z+1, block.TNT.id)
 
-	for a in range(5, 0, -1):
-		mc.postToChat(str(a))
-		time.sleep(1)
-	#countdown.count()
+	#for a in range(5, 0, -1):
+	#	mc.postToChat(str(a))
+	#	time.sleep(1)
+	countdown.count()
 
 	mc.postToChat("BANG!")
-	#countdown.bang()
 	mc.setBlocks(x-10, y-5, z-10, x+10, y+10, z+10, block.AIR.id)
 	#mc.player.setTilePos(x, y+40, z)
+	countdown.bang()
 
 try: 
 	while True:

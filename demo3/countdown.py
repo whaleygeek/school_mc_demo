@@ -23,8 +23,9 @@ def count():
 		time.sleep(s.get_length())
 
 def bang():
-	s.play(squeak)
-	# s.play(explosion)
+        s = squeak
+        #s = explosion
+	s.play()
 	time.sleep(s.get_length())
 
 	
